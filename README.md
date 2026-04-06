@@ -1,7 +1,5 @@
 # Aplikasi Absensi QR Siswa - PHP Native + MySQL
 
-Source code ini dibuat dengan konsep admin panel absensi sekolah seperti contoh yang Anda kirim.
-
 ## Fitur utama
 
 - Login admin dan operator
