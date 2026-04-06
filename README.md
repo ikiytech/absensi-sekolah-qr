@@ -88,7 +88,7 @@ NISN,NAMA,KELAS
 ## 👨‍💻 Developer
 
 Muhammad Rifki
-🔗 https://linkedin.com/in/muhammadrifki
+🔗 [https://linkedin.com/in/muhammadrifki](https://www.linkedin.com/in/muhammad-rifki-7b95ab347/)
 
 ---
 
