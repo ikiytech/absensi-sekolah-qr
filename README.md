@@ -1,71 +1,97 @@
-# Aplikasi Absensi QR Siswa - PHP Native + MySQL
+# 🎓 Aplikasi Absensi QR Siswa
 
-## Fitur utama
+Sistem absensi sekolah berbasis QR Code menggunakan PHP Native dan MySQL yang dapat digunakan secara real-time melalui web.
 
-- Login admin dan operator
-- Registrasi operator mandiri, admin tinggal ACC / tolak
-- Dashboard ringkas
-- Master data kelas
-- Master data siswa + upload foto
-- Auto generate QR token per siswa
-- Lihat kartu QR siswa dan cetak per siswa
-- Cetak QR massal semua siswa / per kelas
-- Scanner QR untuk masuk / pulang
-- Input manual NISN atau token QR
-- Notifikasi suara saat scan berhasil / gagal
-- Log absensi 30 hari per siswa
-- Live list absensi real-time
-- Rekap laporan harian, mingguan, bulanan, tahunan
-- Print laporan absensi lengkap
-- Pengaturan identitas sekolah / kepala sekolah / jam masuk / mode scan
-- Pembuatan dan cetak surat SP
-- Import data siswa dari CSV atau XLSX sederhana
+## 🚀 Demo
 
-## Struktur file penting
+🔗 https://smknusantaradigital.rf.gd/
 
-- `sql/database.sql` : database dan tabel
-- `config/database.php` : konfigurasi koneksi database
-- `login.php` : login admin/operator
-- `students.php` : data siswa, QR, import
-- `classes.php` : data kelas
-- `scanner.php` : scanner QR
-- `reports.php` : rekap laporan
-- `live.php` : live list absensi
-- `settings.php` : pengaturan sekolah
-- `sp_letters.php` : surat SP
+---
 
-## Cara install
+## ✨ Fitur Utama
 
-1. Salin folder project ke `htdocs` XAMPP atau web server Anda.
-2. Buat database MySQL dengan nama `absensi_sekolah`.
-3. Import file `sql/database.sql` ke phpMyAdmin.
-4. Buka file `config/database.php` lalu sesuaikan:
-   - `DB_HOST`
-   - `DB_NAME`
-   - `DB_USER`
-   - `DB_PASS`
-5. Pastikan folder berikut bisa ditulis:
-   - `assets/uploads/students`
-   - `assets/uploads/settings`
-6. Jalankan project dari browser.
+* 🔐 Login admin & operator
+* 🧑‍💼 Registrasi operator + approval admin
+* 📊 Dashboard monitoring
+* 🏫 Manajemen kelas & siswa
+* 🖼️ Upload foto siswa
+* 🔳 Generate QR Code otomatis
+* 🖨️ Cetak kartu QR siswa
+* 📷 Scanner QR (kamera HP & desktop)
+* 🔊 Notifikasi suara saat scan
+* 📋 Riwayat absensi real-time
+* 📈 Rekap laporan (harian - tahunan)
+* 📝 Cetak laporan & surat SP
+* ⚙️ Pengaturan identitas sekolah
+* 📥 Import data siswa (CSV / XLSX)
 
-## Login default
+---
 
-- Username: `admin`
-- Password: `admin123`
+## 🛠️ Tech Stack
 
-## Format import siswa
+* PHP Native
+* MySQL
+* JavaScript
+* HTML/CSS
+* QR Code Library
 
-File CSV atau XLSX sederhana dengan header:
+---
+
+## 📸 Preview
+
+![Dashboard](assets/screenshots/dashboard.png)
+
+---
+
+## ⚙️ Instalasi
+
+1. Clone repository:
+
+```bash
+git clone https://github.com/username/absensi-sekolah-qr.git
+```
+
+2. Import database:
+
+```text
+sql/database.sql
+```
+
+3. Konfigurasi:
+
+```php
+config/database.php
+```
+
+4. Jalankan di localhost / hosting
+
+---
+
+## 🔑 Login Default
+
+```text
+Username: admin  
+Password: admin123
+```
+
+---
+
+## 📄 Format Import
 
 ```text
 NISN,NAMA,KELAS
-34032343,Andriyanto,X RPL 2
 12345003,Citra Kirana,X RPL 2
 ```
 
-## Catatan penting
+---
 
-- Kamera scanner web umumnya paling stabil di `localhost` atau domain `https`.
-- Print laporan dan kartu masih memakai print browser, belum generator PDF server-side.
-- Parser XLSX dibuat ringan untuk worksheet pertama, cocok untuk template sederhana.
+## 👨‍💻 Developer
+
+Muhammad Rifki
+🔗 https://linkedin.com/in/muhammadrifki
+
+---
+
+## ⭐ Catatan
+
+Project ini dibuat sebagai eksplorasi sistem digital absensi sekolah berbasis QR Code yang aplikatif dan dapat digunakan di lingkungan nyata.
